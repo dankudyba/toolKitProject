@@ -5,37 +5,53 @@ body {
   ont-family: 'Open Sans', sans-serif;
 }
 
-.main {
+body .main {
   margin-top: 20px;
 }
 
-.main .main-header {
+body .main .main-header {
   margin-top: 20px;
 }
 
-.main .input-group {
+body .main .input-group {
   margin: 50px 0;
 }
 
-.main .input-group .form-control {
+body .main .input-group .form-control {
   margin-right: 10px;
+  transition: .5s;
 }
 
-.main .input-group .form-control:focus {
-  box-shadow: 0 0 0 0.2rem #ccc !important;
-  border-color: #ccc !important;
+body .main .input-group .form-control:hover, body .main .input-group .form-control:focus {
+  box-shadow: 0 0 1.2rem 0 #6c8eed !important;
+  border-color: #6c8eed !important;
 }
 
-.main .box-wrapper .box {
+body .main .input-group button {
+  transition: .5s;
+}
+
+body .main .input-group button:hover, body .main .input-group button:focus {
+  transform: scale(1.1);
+  background: #fff;
+  color: #000;
+}
+
+body .main .box-wrapper .box {
   padding: 10px 10px;
 }
 
-.main .box-wrapper .box .category {
+body .main .box-wrapper .box .category {
   box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.32);
   padding: 10px;
+  transition: 0.5s;
 }
 
-.main .box-wrapper .box ul {
+body .main .box-wrapper .box .category:hover, body .main .box-wrapper .box .category:focus {
+  box-shadow: 0 0 1.2rem 0 #6c8eed;
+}
+
+body .main .box-wrapper .box ul {
   padding-left: 20px;
 }
 

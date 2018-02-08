@@ -1,38 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-$primary-color: #ccc;
+$primary-color: rgb(108, 142, 237);
 
 body {
 	padding: 0;
 	margin: 0;
 	ont-family: 'Open Sans', sans-serif;
-}
-.main {
+	.main {
 	margin-top: 20px;
-	.main-header{
-		margin-top: 20px;
-	}
-	.input-group {
-		margin: 50px 0;
-		.form-control {
-			margin-right: 10px;
-			&:focus {
-				box-shadow: 0 0 0 0.2rem $primary-color!important;
-				border-color: $primary-color!important;
-			}
+		.main-header{
+			margin-top: 20px;
 		}
-	}
-	.box-wrapper {
-		.box {
-				padding: 10px 10px;
-				.category {
-					box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.32);
-					padding: 10px;
+		.input-group {
+			margin: 50px 0;
+				.form-control {
+					margin-right: 10px;
+					transition: .5s;
+					&:hover, &:focus {
+						box-shadow: 0 0 1.2rem 0 $primary-color!important;
+						border-color: $primary-color!important;
+						}
 				}
+				button {
+					transition: .5s;
+						&:hover, &:focus {
+						transform: scale(1.1);
+						background:  #fff;
+						color: #000;
+						}
+				}
+		}
+		.box-wrapper {
+			.box {
+				padding: 10px 10px;
+					.category {
+						box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.32);
+						padding: 10px;
+						transition: 0.5s;
+							&:hover, &:focus {
+							box-shadow: 0 0 1.2rem 0 $primary-color;
+							}
+					}
 
 				ul {
-					padding-left: 20px;
+				padding-left: 20px;
 				}
 			}
 		}
+	}
 }
